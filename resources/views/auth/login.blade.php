@@ -44,7 +44,7 @@
                                     <a href="{{url('/reactivate-account?email='.$message)}}" class="btn btn-outline-primary mx-1">Réactiver votre compte ?</a>
                                 </div>
                                 @enderror
-                                <a href="{{url('/forget-password')}}">Mot de passe oublié ?</a>
+                                <a class="mdp-forgot" href="{{url('/forget-password')}}">Mot de passe oublié ?</a>
                                 <button type="submit" class="btn btn-primary mx-2">
                                     {{ __('Connexion') }}
                                 </button>

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container-fluid py-4">
+    <div class="container-fluid py-4 text-g">
         <!-- Button trigger modal -->
         <a href="/fournisseur/create" class="btn btn-primary float-end">
             Ajouter un fournisseur
@@ -10,7 +10,7 @@
             <h2>Page fournisseur</h2>
             <table id="DataTable_fournisseur" class="table table-dark mt-2 table-hover table-striped dataTable table-responsive" style="width: 100%">
                 <thead class="border-1 border-bottom border-white">
-                <tr>
+                <tr class="text-g">
                     <th>Nom</th>
                     <th>Email</th>
                     <th></th>

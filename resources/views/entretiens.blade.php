@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container-fluid py-4">
+    <div class="container-fluid py-4 text-g">
         <!-- Button trigger modal -->
         <a href="/entretien/create" class="btn btn-primary float-end">
             Ajouter Entretien
@@ -10,12 +10,12 @@
             <h2>Page entretiens</h2>
             <table id="DataTable_entretiens" class="table table-dark mt-2 table-hover table-striped dataTable table-responsive" style="width: 100%">
                 <thead class="border-1 border-bottom border-white">
-                <tr>
+                <tr class="text-g">
                     <th>Nom garage</th>
                     <th>Type</th>
                     <th>Montant</th>
                     <th>Date</th>
-                    <th>Immatriculation</th>
+                    <th>Immatriculation</th> 
                     <th>Note</th>
                     <th></th>
                 </tr>

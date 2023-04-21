@@ -11,6 +11,8 @@
     <title>{{ __('Gestion Flotte') }}</title>
 
     <!-- Scripts -->
+    
+
     <script src="{{asset('js/fontawesome.js')}}" defer></script>
     @if(\Illuminate\Support\Facades\Auth::user())
         @if(! \Illuminate\Support\Facades\Auth::user()->hasRole('user'))
@@ -55,16 +57,16 @@
                                                 Pages
                                             </a>
                                     @endif
-                                    <div class="dropdown-menu dropdown-menu-end bg-grey" aria-labelledby="navbarDropdown">
+                                    <div class="dropdown-menu dropdown-menu-end dropdown-menu-end-bis bg-ddnb" aria-labelledby="navbarDropdown">
                                         @if(\Illuminate\Support\Facades\Auth::user()->hasRole(['admin', 'responsable auto']))
-                                            <a href="{{url('/voitures')}}" class="dropdown-item text-g">Voitures</a>
-                                            <a href="{{url('/entretiens')}}" class="dropdown-item text-g">Entretiens</a>
-                                            <a href="{{url('/assurances')}}" class="dropdown-item text-g">Assurances</a>
-                                            <a href="{{url('/reparations')}}" class="dropdown-item text-g">Reparations</a>
-                                            <a href="{{url('/consommations')}}" class="dropdown-item text-g">Consommations</a>
+                                            <a href="{{url('/voitures')}}" class="dropdown-item bg-hov-colo text-g">Voitures</a>
+                                            <a href="{{url('/entretiens')}}" class="dropdown-item bg-hov-colo text-g">Entretiens</a>
+                                            <a href="{{url('/assurances')}}" class="dropdown-item bg-hov-colo text-g">Assurances</a>
+                                            <a href="{{url('/reparations')}}" class="dropdown-item bg-hov-colo text-g">Reparations</a>
+                                            <a href="{{url('/consommations')}}" class="dropdown-item bg-hov-colo text-g">Consommations</a>
                                         @endif
                                         @if(\Illuminate\Support\Facades\Auth::user()->hasRole(['admin']))
-                                            <a href="{{url('/voitures-fournisseur')}}" class="dropdown-item color-white">Gestion véhicules fournisseur</a>
+                                            <a href="{{url('/voitures-fournisseur')}}" class="dropdown-item bg-hov-colo text-g">Gestion véhicules fournisseur</a>
                                         @endif
                                     </div>
                                 </li>
@@ -125,13 +127,13 @@
                         @guest
                             @if (Route::has('login'))
                                 <li class="nav-item">
-                                    <a class="nav-link text-white" href="{{ route('login') }}">{{ __('Connexion') }}</a>
+                                    <a class="nav-link log-col" href="{{ route('login') }}">{{ __('Connexion') }}</a>
                                 </li>
                             @endif
 
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="nav-link text-white" href="{{ route('register') }}">{{ __('Inscription ') }}</a>
+                                    <a class="nav-link log-col" href="{{ route('register') }}">{{ __('Inscription ') }}</a>
                                 </li>
                             @endif
                         @else

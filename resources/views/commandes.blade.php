@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container-fluid py-4">
+    <div class="container-fluid py-4 text-g">
         {{--Bouton pour créer une agence--}}
         <a  class="btn btn-primary float-end" href="/commande/create">
             Ajouter une commandes
@@ -10,7 +10,7 @@
             <h2>Page commandes</h2>
             <table id="DataTable_commandes" class="table table-dark mt-2 table-hover table-striped dataTable table-responsive" style="width: 100%">
                 <thead class="border-1 border-bottom border-white">
-                <tr>
+                <tr class="text-g">
                     <th>Date de début</th>
                     <th>Date de fin</th>
                     <th>Marque</th>

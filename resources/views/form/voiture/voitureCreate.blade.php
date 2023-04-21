@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container h-100C">
+    <div class="container  h-100C">
         <div class="row justify-content-center h-100">
             <div class="col-md-8 align-self-center">
                 @if(session()->has('message'))
@@ -9,7 +9,7 @@
                         {{ session()->get('message') }}
                     </div>
                 @endif
-                <div class="card bg-p shadow-block">
+                <div class="card container-marg  bg-p shadow-block">
                     <div class="card-header bg-s">{{__('Ajouter une voiture')}}</div>
                     <div class="card-body">
                         <form method="POST" action="{{ route('createVoiture') }}" enctype="multipart/form-data">

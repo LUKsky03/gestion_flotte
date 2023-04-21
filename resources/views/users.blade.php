@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container-fluid py-4">
+    <div class="container-fluid py-4 text-g">
         <!-- Button trigger modal -->
         <a href="/user/create" class="btn btn-primary float-end">
             Ajouter un utilisateur
@@ -10,7 +10,7 @@
             <h2>Page utilisateurs</h2>
             <table id="DataTable_users" class="table table-dark mt-2 table-hover table-striped dataTable table-responsive" style="width: 100%">
                 <thead class="border-1 border-bottom border-white">
-                <tr>
+                <tr class="text-g">
                     <th>Prenom</th>
                     <th>Nom</th>
                     <th>Email</th>

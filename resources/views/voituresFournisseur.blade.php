@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-    <div class="container-fluid py-4">
+    <div class="container-fluid py-4 text-g">
         <!-- Button trigger modal -->
         <a type="button" class="btn btn-primary float-end"  href="voiture-fournisseur/create">
             Ajouter une voiture

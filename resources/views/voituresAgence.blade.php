@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-    <div class="container-fluid py-4">
+    <div class="container-fluid py-4 text-g">
         <a href="/chef-agence" class="btn bg-s shadow-block color-white">Retour</a>
         <div class="col-9 d-flex flex-wrap pt-5 justify-content-center mx-auto containerVoiture">
             @foreach($voitures as $data)

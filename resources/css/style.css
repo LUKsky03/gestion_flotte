@@ -111,9 +111,9 @@ td{
 }
 
 .text-g{
-
     color: #8bb4f8!important;
   }
+
 
 .text-nav{
     color: #7C9ACC!important;
@@ -129,4 +129,132 @@ td{
     background: var(--bg-nav)!important;
     border-bottom: 1px solid!important;
     border-color: #7C9ACC!important;
+}
+
+ul.menu{
+    display: inline-block;
+    list-style-type: none;
+}
+
+li.menu_list {
+    height: 85px;
+    width: 170px;
+    position: relative;
+    margin: 10px;
+   
+}
+li.menu_list .front,a.side{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85px;
+    width: 170px;
+    padding: 30px;
+    cursor: pointer;
+}
+a.side {
+    position: absolute;
+    top: 0;
+    left: 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .5s ease-out;
+    cursor: pointer;
+}
+
+li.menu_list .front {
+    background-color: #34465d;
+    color: #00e5ff;
+    transform-origin: 0 0 180px;
+}
+
+li.menu_list.activated .front{
+    background-color: #2e4d7e!important;
+    color:rgb(244, 231, 231);
+}
+
+a.side {
+    background-color: #00e5ff;
+    color: #34465d;
+    transform-origin: 0 0 180px ;
+    transform: rotateY(90deg);
+}
+li.menu_list:hover:not(.activated) a.side {
+    transform: rotateY(0deg);
+}
+li.menu_list:hover:not(.activated) .front {
+    transform: rotateY(-90deg);
+}
+
+
+.ml-20{
+  margin-right: 400px!important;
+}
+
+.tab-pane{
+    margin-top: 50px!important;
+    margin-left: 30px!important;
+    margin-right: 30px!important;
+}
+
+.ml-10{
+    margin-left: 100px!important;
+}
+
+.border:hover{
+    border-color: #34465d!important;
+}
+
+.border{
+    border-color: #34465d!important;
+}
+
+li.menu_list.activated span {
+    background-color: #00e5ff!important;
+}
+.tab-content{
+    width: calc(100% - 170px) ;
+}
+
+
+.mdp-forgot{
+    color: white !important;
+}
+
+.mdp-forgot:hover{
+    color: #0d6efd !important;
+}
+
+.log-col{
+    color: white !important;
+}
+
+.log-col:hover{
+    color: #0d6efd !important;
+}
+
+.bg-ddnb{
+    background-color: rgb(32, 31, 31) !important;
+    border: 0,2px solid !important;
+    border-color: #8bb4f8 !important;
+}   
+
+.bg-hov-colo:hover{
+    background-color: rgb(32, 31, 31) !important;
+    color: white !important;
+}
+
+.dropdown-menu-end-bis{
+    right: auto !important;
+}
+
+.container-marg{
+    margin-top: 30px;
+    margin-bottom: 30px; 
+}
+.leftnav{
+    max-height: calc(100vh - 170px);
+    overflow-x: hidden;
+    overflow-y: auto;
+    scrollbar-width:none !important; 
 }

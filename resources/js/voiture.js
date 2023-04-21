@@ -10,12 +10,6 @@ var delToastEl = document.getElementById('toastSupp');
 var delToast = bootstrap.Toast.getOrCreateInstance(delToastEl);
 function supModal(row){
 
-    $('#btn').on('click',function () {
-        localStorage.setItem('id_user',$(this).attributes('data_id'))
-    })
-
-    $(userID).attributes('data-idUser')
-
 
     let id_voiture = $(row).attr('data-voiture');
     let voiture = $(row).parent();

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container-fluid py-4">
+    <div class="container-fluid py-4 text-g">
         <div class="container">
             <h2 class="mb-5">Page agences</h2>
                 @foreach($agences as $datas)

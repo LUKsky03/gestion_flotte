@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container-fluid py-4">
+    <div class="container-fluid py-4 text-g">
         <!-- Button trigger modal -->
         <a href="/assurance/create" class="btn btn-primary float-end">
             Ajouter une assurance
@@ -10,7 +10,7 @@
             <h2>Page assurances</h2>
             <table id="DataTable_assurances" class="table table-dark mt-2 table-hover table-striped dataTable table-responsive" style="width: 100%">
                 <thead class="border-1 border-bottom border-white">
-                <tr>
+                <tr class="text-g">
                     <th>Nom assurance</th>
                     <th>Debut assurance</th>
                     <th>Fin assurance</th>

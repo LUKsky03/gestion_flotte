@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container-fluid py-4">
+    <div class="container-fluid py-4 text-g">
         <!-- Button trigger modal -->
         <a href="/reparation/create" class="btn btn-primary float-end">
             Ajouter une reparation
@@ -10,7 +10,7 @@
             <h2>Page reparations</h2>
             <table id="DataTable_reparations" class="table table-dark mt-2 table-hover table-striped dataTable table-responsive" style="width: 100%">
                 <thead class="border-1 border-bottom border-white">
-                <tr>
+                <tr class="text-g">
                     <th>Nom garage</th>
                     <th>Type</th>
                     <th>Montant</th>
